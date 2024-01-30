@@ -13,8 +13,7 @@ When using our LMS implementations, the internal counter (`q`) will be
 incremented before each signature is returned.
 
 If the LMS private key is persisted to storage, you **MUST** update the
-persistent storage after each signature is generated and before it is released
-to the rest of the application. Failure to adhere to this requirement is a
+persistent storage before each signature is generated. Failure to adhere to this requirement is a
 security vulnerability in your application.
 
 For a stateless hash-based signature algorithm, see
